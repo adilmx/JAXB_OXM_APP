@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="listAccount" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gAccount" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="gAccount" type="gAccount"></xs:element>
+    <xs:complexType name="gAccount">
+        <xs:sequence>
+            <xs:element name="sold" type="xs:double"/>
+            <xs:element name="date" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:long"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bank>
+    <account id="1">
+        <solde>1000.0</solde>
+    </account>
+    <account id="2">
+        <solde>2000.0</solde>
+    </account>
+</bank>
